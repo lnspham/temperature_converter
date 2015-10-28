@@ -3,11 +3,14 @@ $(document).ready(function(){
 
 	function convertTemp() {
 
+		/*identify the variables*/
 		var c = $('#celsius').val(); //Celsius. Get user input
 		var f= (c * 9)/5 + 32;; //converting Celsius to Fahrenheit 
+		
+		/*call for actions*/
+		$('#fahreneit').html('ahhh')
 
-		$('#fahreneit').html('joy')
-
+		/*provide the actions*/
 		if (f <= 32) {
 
 			$('body').css('background-image', 'url("images/winter.jpg")');

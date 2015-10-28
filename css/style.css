@@ -25,7 +25,7 @@ h5 {
 	font-weight: normal;
 }
 
-#convert {
+button#convert {
 	padding: 20px;
 	font-size: 30px;
 	font-weight: 300;
@@ -34,6 +34,13 @@ h5 {
 	background-color: #d1cece;
 	border: 2px solid #969393;
 	margin: 10px auto;
+}
+
+button#convert:hover {
+  background: #3071A9;
+  color: #FFF;
+  box-shadow: inset 0 0 0 5px #3071A9;
+  border: 2px solid #FFF;
 }
 
 #celsius {
