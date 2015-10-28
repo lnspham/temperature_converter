@@ -11,31 +11,27 @@ $(document).ready(function(){
 		if (c <= 32) {
 
 			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
-			//$('body').css('background-image', 'url(../images/winter.jpg)');
-			$('body').css('background-color', '#FFF');
+			$('body').css('background-image', 'url(images/winter.jpg)');
 			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
 
 		}else if (c > 32 && c <= 40) {
 
 			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
-			//$('body').css('background-image', 'url(../images/fall.jpg)');
-			$('body').css('background-color', 'orange');
+			$('body').css('background-image', 'url(images/fall.jpg)');
 			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
 		}else if (c > 40 && c <= 50) {
 
 			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
-			//$('body').css('background-image', 'url(../images/fall.jpg)');
-			$('body').css('background-color', 'green');
+			$('body').css('background-image', 'url(images/fall.jpg)');
 			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
 
 		}else {
 
 			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
-			//$('body').css('background-image', 'url(../images/winter.jpg)');
-			$('body').css('background-color', 'yellow');
+			$('body').css('background-image', 'url(../images/winter.jpg)');
 			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
 		}
