@@ -5,28 +5,38 @@ $(document).ready(function(){
 
 		/*identify the variables*/
 		var c = parseInt($('#celsius').val()); //Celsius. Get user input
-		var f= (c * 9)/5 + 32;; //converting Celsius to Fahrenheit 
-		
+		var f = ""; //or do f = 0;?
 
 		/*provide the actions*/
-		if (f <= 32) {
+		if (c <= 32) {
 
-			$('body').css('background-image', 'url("images/winter.jpg")');
+			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
+			//$('body').css('background-image', 'url(../images/winter.jpg)');
+			$('body').css('background-color', '#FFF');
+			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
 
-		}if else (f > 32 && f <= 60) {
+		}else if (c > 32 && c <= 40) {
 
-			$('body').css('background-image', 'url("images/fall.jpg")');
+			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
+			//$('body').css('background-image', 'url(../images/fall.jpg)');
+			$('body').css('background-color', 'orange');
+			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
+		}else if (c > 40 && c <= 50) {
 
-		}if else (f > 60 && f <= 75) {
-
-			$('body').css('background-image', 'url("images/spring.jpg")');
+			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
+			//$('body').css('background-image', 'url(../images/fall.jpg)');
+			$('body').css('background-color', 'green');
+			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
 
 		}else {
 
-			$('body').css('background-image', 'url("images/winter.jpg")');
+			f = (c * 9)/5 + 32; //converting Celsius to Fahrenheit
+			//$('body').css('background-image', 'url(../images/winter.jpg)');
+			$('body').css('background-color', 'yellow');
+			$('#fahreneit').css('color', '#000');
 			$('#fahreneit').html(f);
 		}
 	}
